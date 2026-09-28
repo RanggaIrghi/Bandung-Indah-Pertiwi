@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+   /* Custom Colors */
+    --color-brand-white: #FAF9F6;
+    --color-brand-red: #a73229;
+    --color-brand-dark: #222222;
+    --color-brand-brown: #C4B5A0; 
+    --color-brand-darkbrown: #1A1208; 
+    --color-brand-lightbrown: #F2EFE9;
+    --color-brand-text: #5A5048;
+    --color-footer-title: #4A4035;
+    --color-footer-text: #7A7269;
+
+    /* Custom Fonts */
+    --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}

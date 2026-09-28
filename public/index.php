@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth scroll-pt-24">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandung Indah Pertiwi</title>
+
+    <!-- Logo BIP -->
+    <link rel="icon" type="image/png" href="assets/images/BIP_Logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased text-brand-dark overflow-x-hidden bg-brand-white">
+
+    <!-- HEADER SECTION -->
+     <?php include '../src/includes/header.php';?>
+
+    <main class="pt-24" id="home">
+        <!-- Hero Section -->
+        <section class="relative w-full min-h-[calc(100vh-6rem)] bg-cover bg-center bg-no-repeat flex items-center pt-10 pb-32 md:pb-0" 
+                 style="background-image: url('assets/images/office_bintaro004.webp'); will-change: transform;">
+            <div class="absolute inset-0 bg-black/45 md:bg-black/40"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full py-12 md:py-0">
+                <div class="max-w-2xl">
+                    <p class="text-brand-brown text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.25em] uppercase mb-4">
+                        Jasa Desain Interior & Kontraktor, Bandung, Indonesia
+                    </p>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white font-medium leading-[1.15] md:leading-[1.1] mb-6">
+                        Ruang yang <br class="hidden sm:block">
+                        <span class="text-brand-brown italic">Bercerita</span> Tentang <br>
+                        Anda
+                    </h2>
+                    <p class="text-brand-brown text-sm md:text-base leading-relaxed mb-8 md:mb-10 max-w-lg font-light">
+                        Kami menghadirkan estetika dan fungsi dalam harmoni sempurna—dari konsep awal hingga kunci diserahkan ke tangan Anda.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
+                        <a href="#architecture" class="bg-brand-red hover:bg-[#8a2921] text-white text-sm font-medium px-8 py-3.5 rounded-sm text-center transition-all">
+                            Jelajahi Gaya Arsitektur
+                        </a>
+                        <a href="#aboutUs" class="bg-transparent hover:bg-white/10 border border-white/70 text-white text-sm font-medium px-8 py-3.5 rounded-sm text-center transition-all">
+                            Tentang Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="absolute bottom-0 w-full md:w-auto left-0 md:left-auto md:right-0 bg-white shadow-lg md:rounded-tl-lg overflow-hidden flex flex-wrap md:flex-nowrap">
+                <div class="w-1/2 md:w-auto px-4 md:px-8 py-4 md:py-6 border-r border-b md:border-b-0 border-gray-100 flex flex-col items-center md:min-w-[140px]">
+                    <span class="text-2xl md:text-3xl font-serif font-bold text-gray-900">240+</span>
+                    <span class="text-[8px] md:text-[9px] text-gray-400 font-bold tracking-widest uppercase mt-1 text-center">Proyek Selesai</span>
+                </div>
+                <div class="w-1/2 md:w-auto px-4 md:px-8 py-4 md:py-6 md:border-r border-b md:border-b-0 border-gray-100 flex flex-col items-center md:min-w-[140px]">
+                    <span class="text-2xl md:text-3xl font-serif font-bold text-gray-900">12 Th</span>
+                    <span class="text-[8px] md:text-[9px] text-gray-400 font-bold tracking-widest uppercase mt-1 text-center">Pengalaman</span>
+                </div>
+                <div class="w-1/2 md:w-auto px-4 md:px-8 py-4 md:py-6 border-r border-gray-100 flex flex-col items-center md:min-w-[140px]">
+                    <span class="text-2xl md:text-3xl font-serif font-bold text-gray-900">98%</span>
+                    <span class="text-[8px] md:text-[9px] text-gray-400 font-bold tracking-widest uppercase mt-1 text-center">Kepuasan Klien</span>
+                </div>
+                <div class="w-1/2 md:w-auto px-4 md:px-8 py-4 md:py-6 flex flex-col items-center md:min-w-[140px]">
+                    <span class="text-2xl md:text-3xl font-serif font-bold text-gray-900">48</span>
+                    <span class="text-[8px] md:text-[9px] text-gray-400 font-bold tracking-widest uppercase mt-1 text-center">Tim Profesional</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="aboutUs" class="py-20 xl:py-32 w-full">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 xl:grid-cols-2 gap-16 xl:gap-24 items-center">
+                
+                <!-- Kolom Kiri: Gambar & Badge -->
+                <div class="relative w-full px-4 sm:px-8 xl:px-0 xl:pr-10" data-aos="fade-up">
+                    
+                    <img src="assets/images/bedroom2-01.webp" 
+                         alt="About Us" 
+                         class="w-full h-auto object-cover rounded-sm shadow-md aspect-[4/3] xl:aspect-auto xl:h-[500px]">
+                    
+                    <div class="absolute -bottom-4 right-2 sm:-bottom-6 sm:right-0 xl:-bottom-8 xl:-right-4 bg-brand-red text-white p-3 sm:p-6 xl:p-8 flex flex-col items-center justify-center rounded-sm shadow-xl aspect-square w-24 sm:w-32 xl:w-40 z-10">
+                        <span class="text-xl sm:text-2xl xl:text-4xl font-serif font-bold mb-0.5 sm:mb-1">11+</span>
+                        <span class="text-[7px] sm:text-[9px] xl:text-[10px] tracking-widest text-center uppercase">Tahun Berdiri</span>
+                    </div>
+
+                </div>
+
+                <!-- Kolom Kanan: Konten Teks -->
+                <div class="flex flex-col">
+                    <span class="text-[11px] font-bold tracking-[0.25em] text-brand-red uppercase mb-4 block" data-aos="fade-up">About Us</span>
+                    <h2 class="text-4xl xl:text-5xl font-serif font-bold text-brand-dark mb-6 leading-[1.2]" data-aos="fade-up" data-aos-delay="100">
+                        Sebelas Tahun <br>
+                        <span class="italic font-light">Merangkai Keindahan</span>
+                    </h2>
+                    
+                    <div class="space-y-4 mb-10 text-brand-text font-light text-[15px] leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                        <p>Bandung Indah Pertiwi berdiri pada 2015 atas keyakinan bahwa setiap ruang menyimpan potensi untuk menjadi luar biasa. Kepercayaan yang diberikan oleh berbagai pihak telah membawa kami mengelola beragam proyek residensial, komersial, hingga sipil di seluruh Jawa Barat.</p>
+                        <p>Pendekatan kami sederhana: dengarkan klien lebih dalam dari yang mereka ucapkan, rancang lebih dari yang mereka bayangkan, dan bangun dengan standar kualitas yang melampaui ekspektasi. Hasilnya adalah ruang yang terasa benar-benar milik Anda.</p>
+                    </div>
+                    
+                    <!-- 3 Cards Layanan -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+                        <div class="border border-gray-100 p-5 bg-white shadow-sm hover:shadow-md transition-shadow group flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-2 h-2 bg-brand-red mb-4 group-hover:scale-125 transition-transform"></div>
+                            <h3 class="text-[13px] font-semibold text-brand-dark mb-2">Desain Interior</h3>
+                            <p class="text-[11px] text-gray-400 leading-relaxed font-light">Dari konsep hingga finishing, kami merancang setiap ruang dengan pendekatan yang personal dan presisi estetika tinggi.</p>
+                        </div>
+                        <div class="border border-gray-100 p-5 bg-white shadow-sm hover:shadow-md transition-shadow group flex flex-col" data-aos="fade-up" data-aos-delay="400">
+                            <div class="w-2 h-2 bg-brand-red mb-4 group-hover:scale-125 transition-transform"></div>
+                            <h3 class="text-[13px] font-semibold text-brand-dark mb-2">Jasa Kontraktor</h3>
+                            <p class="text-[11px] text-gray-400 leading-relaxed font-light">Tim kontraktor kami mengeksekusi pembangunan dengan standar kualitas premium, tepat waktu, dan sesuai anggaran.</p>
+                        </div>
+                        <div class="border border-gray-100 p-5 bg-white shadow-sm hover:shadow-md transition-shadow group flex flex-col" data-aos="fade-up" data-aos-delay="500">
+                            <div class="w-2 h-2 bg-brand-red mb-4 group-hover:scale-125 transition-transform"></div>
+                            <h3 class="text-[13px] font-semibold text-brand-dark mb-2">Konsultasi & 3D Render</h3>
+                            <p class="text-[11px] text-gray-400 leading-relaxed font-light">Visualisasikan impian Anda sebelum pembangunan dimulai melalui presentasi 3D fotorealistik dan estimasi biaya transparan.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Link -->
+                    <div>
+                        <a href="#" class="group inline-flex items-center text-brand-red border-b border-brand-red pb-0.5 text-sm font-medium hover:text-[#8a2921] hover:border-[#8a2921] transition-colors">
+                            Baca Kisah Lengkap Kami 
+                            <span class="ml-2 transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- OUR CAREER / TIMELINE SECTION -->
+        <section class="py-20 lg:py-32 w-full bg-brand-lightbrown" id="ourCareer">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <!-- HEADER TIMELINE -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 mb-20 md:mb-28">
+                    <!-- Judul Kiri -->
+                    <div data-aos="fade-up">
+                        <span class="text-[11px] font-bold tracking-[0.25em] text-brand-red uppercase mb-4 block">
+                            Our Career
+                        </span>
+                        <h2 class="text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-[1.2]">
+                            Perjalanan Proyek <br>
+                            <span class="italic font-light">yang Membentuk Kami</span>
+                        </h2>
+                    </div>
+                    <!-- Paragraf Kanan -->
+                    <div class="flex items-center lg:pl-10" data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-brand-text font-light text-[15px] leading-relaxed">
+                            Setiap proyek adalah babak baru dalam perjalanan kami. Di bawah ini adalah milestones yang paling membentuk identitas dan keahlian Bandung Indah Pertiwi hingga menjadi studio desain yang dikenal hari ini.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Container -->
+                <div class="relative w-full mt-10">
+                    
+                    <!-- Garis Tengah Abu-abu -->
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-[1px] h-full bg-[#DDD9D3]"></div>
+
+                    <!-- Item 1: Pam's Cab, Batu Karas -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-between mb-24 md:mb-32" data-aos="fade-up">
+                        <!-- Gambar -->
+                        <div class="w-full md:w-[45%] relative mb-10 md:mb-0 group">
+                            <div class="w-full aspect-[4/3] overflow-hidden rounded-sm shadow-sm">
+                                <img src="assets/images/batukaras02.webp" alt="Pam's Cab Batu Karas" class="w-full aspect-[4/3] object-cover shadow-sm group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            
+                            <!-- Year Badge -->
+                            <div class="absolute -top-4 -right-4 md:-right-6 bg-[#262626] text-white text-sm md:text-base font-serif tracking-widest px-5 py-4 shadow-xl rounded-sm z-10">
+                                2026
+                            </div>
+                        </div>
+                        
+                        <!-- Titik Merah -->
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                            <div class="w-2.5 h-2.5 bg-brand-red rounded-full ring-[4px] ring-brand-red/20 z-10"></div>
+                        </div>
+
+                        <!-- Teks -->
+                        <div class="w-full md:w-[45%] md:pl-8">
+                            <div class="inline-block border border-red-200 text-brand-red text-[9px] font-bold px-3 py-1.5 uppercase tracking-widest mb-5 rounded-sm">
+                                Komersial & Retail
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-serif font-medium text-brand-dark mb-4">Pam's Cab, Batu Karas</h3>
+                            <p class="text-brand-text font-light text-sm leading-relaxed mb-6">
+                                Desain interior bergaya tropis modern untuk area cafe dan surf shop. Memadukan elemen kayu natural, pajangan papan selancar, dan meja bar kopi yang estetik untuk menciptakan suasana pesisir yang santai namun premium.
+                            </p>
+                            <div class="text-[10px] text-gray-400 font-bold tracking-wider uppercase flex items-center gap-2">
+                                <span class="w-1 h-1 rounded-full bg-brand-red/50"></span> Desain Interior & Fit-Out
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Showroom Liam Mobilindo -->
+                    <div class="relative flex flex-col-reverse md:flex-row items-center justify-between mb-24 md:mb-32" data-aos="fade-up">
+                        <div class="w-full md:w-[45%] mt-10 md:mt-0 md:pr-8">
+                            <div class="inline-block border border-red-200 text-brand-red text-[9px] font-bold px-3 py-1.5 uppercase tracking-widest mb-5 rounded-sm">
+                                Komersial
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-serif font-medium text-brand-dark mb-4">Showroom Liam Mobilindo, Cileunyi</h3>
+                            <p class="text-brand-text font-light text-sm leading-relaxed mb-6">
+                                Perancangan interior showroom otomotif berkonsep modern elegan. Dilengkapi pencahayaan dramatis, area lounge tamu yang nyaman, dan tata letak yang menonjolkan kemewahan setiap kendaraan yang dipamerkan.
+                            </p>
+                            <div class="text-[10px] text-gray-400 font-bold tracking-wider uppercase flex items-center gap-2">
+                                <span class="w-1 h-1 rounded-full bg-brand-red/50"></span> Desain Interior & Kontraktor
+                            </div>
+                        </div>
+                        
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                            <div class="w-2.5 h-2.5 bg-brand-red rounded-full ring-[4px] ring-brand-red/20 z-10"></div>
+                        </div>
+
+                        <div class="w-full md:w-[45%] relative group">
+                            <div class="w-full aspect-[4/3] overflow-hidden rounded-sm shadow-sm">
+                                <img src="assets/images/showroom.webp" alt="Liam Mobilindo" class="w-full aspect-[4/3] object-cover shadow-sm group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            
+                            <!-- Year Badge -->
+                            <div class="absolute -top-4 -left-4 md:-left-6 bg-[#262626] text-white text-sm md:text-base font-serif tracking-widest px-5 py-4 shadow-xl rounded-sm z-10">
+                                2026
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Office Aluna -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-between mb-24 md:mb-32" data-aos="fade-up">
+                        <div class="w-full md:w-[45%] relative mb-10 md:mb-0 group">
+                            <div class="w-full aspect-[4/3] overflow-hidden rounded-sm shadow-sm">
+                                <img src="assets/images/office_bintaro15.webp" alt="Office Aluna" class="w-full aspect-[4/3] object-cover shadow-sm group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="absolute -top-4 -right-4 md:-right-6 bg-[#262626] text-white text-sm md:text-base font-serif tracking-widest px-5 py-4 shadow-xl rounded-sm z-10">
+                                2025
+                            </div>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                            <div class="w-2.5 h-2.5 bg-brand-red rounded-full ring-[4px] ring-brand-red/20 z-10"></div>
+                        </div>
+                        <div class="w-full md:w-[45%] md:pl-8">
+                            <div class="inline-block border border-red-200 text-brand-red text-[9px] font-bold px-3 py-1.5 uppercase tracking-widest mb-5 rounded-sm">
+                                Ruang Kerja
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-serif font-medium text-brand-dark mb-4">Office Aluna, Bintaro</h3>
+                            <p class="text-brand-text font-light text-sm leading-relaxed mb-6">
+                                Perancangan ruang kerja modern dengan konsep open-space yang dinamis. Menggabungkan area kerja ergonomis, ruang rapat berpartisi kaca, dan sudut pantry elegan untuk menunjang produktivitas serta kolaborasi tim.
+                            </p>
+                            <div class="text-[10px] text-gray-400 font-bold tracking-wider uppercase flex items-center gap-2">
+                                <span class="w-1 h-1 rounded-full bg-brand-red/50"></span> Desain Interior & Kontraktor
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Private Residence, Bogor -->
+                    <div class="relative flex flex-col-reverse md:flex-row items-center justify-between" data-aos="fade-up">
+                        <div class="w-full md:w-[45%] mt-10 md:mt-0 md:pr-8">
+                            <div class="inline-block border border-red-200 text-brand-red text-[9px] font-bold px-3 py-1.5 uppercase tracking-widest mb-5 rounded-sm">
+                                Residensial
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-serif font-medium text-brand-dark mb-4">Private Residence, Bogor</h3>
+                            <p class="text-brand-text font-light text-sm leading-relaxed mb-6">
+                                Renovasi area dapur dan ruang makan bergaya kontemporer dengan sentuhan industrial tropis. Penggunaan kabinet gelap, backsplash ubin hijau, lampu gantung klasik, dan kursi rotan memberikan kehangatan khas hunian modern.
+                            </p>
+                            <div class="text-[10px] text-gray-400 font-bold tracking-wider uppercase flex items-center gap-2">
+                                <span class="w-1 h-1 rounded-full bg-brand-red/50"></span> Desain Interior & Custom Furniture
+                            </div>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
+                            <div class="w-2.5 h-2.5 bg-brand-red rounded-full ring-[4px] ring-brand-red/20 z-10"></div>
+                        </div>
+                        <div class="w-full md:w-[45%] relative group">
+                            <div class="w-full aspect-[4/3] overflow-hidden rounded-sm shadow-sm">
+                                <img src="assets/images/Scene 39.webp" alt="Private Residence Bogor" class="w-full aspect-[4/3] object-cover shadow-sm group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="absolute -top-4 -left-4 md:-left-6 bg-[#262626] text-white text-sm md:text-base font-serif tracking-widest px-5 py-4 shadow-xl rounded-sm z-10">
+                                2024
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- ARCHITECTURE / EKSPLORASI GAYA DESAIN -->
+        <section class="py-20 lg:py-32 w-full bg-brand-white" id="architecture">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <!-- Header Section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 lg:gap-16 mb-12">
+                    <div class="flex flex-col" data-aos="fade-up">
+                        <span class="text-[11px] font-bold tracking-[0.25em] text-[#a73229] uppercase mb-4 block">
+                            Architecture
+                        </span>
+                        <h2 class="text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-[1.1] m-0">
+                            Eksplorasi <br>
+                            <span class="italic font-light">Gaya Desain Anda</span>
+                        </h2>
+                    </div>
+                    <div class="flex items-end lg:pl-10 pb-1" data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-brand-text font-light text-[15px] leading-relaxed m-0">
+                            Setiap gaya arsitektur kami mengandung filosofi tersendiri. Pilih gaya yang paling mencerminkan kepribadian dan kebutuhan Anda—kami akan membantu mewujudkannya dengan detail yang tak tergesa-gesa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main Image Slider -->
+                <div class="relative w-full aspect-[4/3] md:aspect-[21/9] lg:h-[550px] rounded-sm overflow-hidden mb-6 shadow-sm group" data-aos="fade-up">
+                    <!-- Background Image -->
+                    <img id="slider-main-img" src="assets/images/Scene 24_5.webp" alt="Modern Japandi" class="w-full h-full object-cover transition-opacity duration-500">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+
+                    <!-- Navigation Arrows -->
+                    <button id="slider-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-brand-red text-white flex items-center justify-center backdrop-blur-sm transition-colors z-10 rounded-sm cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                    </button>
+                    <button id="slider-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-black/40 hover:bg-brand-red text-white flex items-center justify-center backdrop-blur-sm transition-colors z-10 rounded-sm cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </button>
+
+                    <!-- Text Content (Bottom Left) -->
+                    <div class="absolute bottom-0 left-0 p-8 md:p-12 w-full md:w-2/3 lg:w-1/2 z-10">
+                        <span id="slider-subtitle" class="text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-brand-brown uppercase mb-3 block transition-all">
+                            Hangat & Berkarakter
+                        </span>
+                        <h3 id="slider-title" class="text-3xl md:text-4xl font-serif text-white mb-3 transition-all">Tropical Contemporary</h3>
+                        <p id="slider-desc" class="text-brand-brown font-light text-sm leading-relaxed hidden md:block transition-all">
+                            Memadukan kehangatan material kayu natural dengan aksen hitam yang tegas dan backsplash hijau zamrud. Sentuhan kursi rotan klasik dan pencahayaan amber menciptakan suasana ruang yang intim namun berkelas.
+                        </p>
+                    </div>
+
+                    <!-- Color Palette (Bottom Right) -->
+                    <div id="slider-palette" class="absolute bottom-8 right-8 md:bottom-12 md:right-12 z-10 hidden sm:flex items-center gap-2.5">
+                        <span class="text-[9px] font-bold tracking-[0.2em] text-gray-300 uppercase mr-2">Palet</span>
+                        <div class="w-4 h-4 rounded-sm shadow-sm bg-[#9c6644]"></div>
+                        <div class="w-4 h-4 rounded-sm shadow-sm bg-[#1a1a1a]"></div>
+                        <div class="w-4 h-4 rounded-sm shadow-sm bg-[#2e4934]"></div>
+                        <div class="w-4 h-4 rounded-sm shadow-sm bg-[#d68c45]"></div>
+                    </div>
+                </div>
+
+                <!-- Thumbnails Selector -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-16">
+                    
+                    <!-- Thumbnail 0 -->
+                    <div class="slider-thumb relative aspect-[4/3] md:aspect-video rounded-sm overflow-hidden cursor-pointer ring-2 ring-offset-2 ring-offset-[#fdfdfd] ring-brand-red" data-index="0" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/images/Scene 24_5.webp" alt="Tropical Contemporary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="thumb-overlay absolute inset-0 bg-black/40 transition-colors"></div>
+                        <div class="absolute bottom-3 left-3 md:left-4 z-10">
+                            <h4 class="text-white font-serif text-xs md:text-sm font-semibold mb-0.5">Tropical Contemporary</h4>
+                            <span class="text-brand-brown text-[8px] md:text-[9px] tracking-wider uppercase">Hangat & Berkarakter</span>
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail 1 -->
+                    <div class="slider-thumb relative aspect-[4/3] md:aspect-video rounded-sm overflow-hidden cursor-pointer group" data-index="1" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Classic Elegance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="thumb-overlay absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors"></div>
+                        <div class="absolute bottom-3 left-3 md:left-4 z-10">
+                            <h4 class="text-white font-serif text-xs md:text-sm font-semibold mb-0.5">Classic Elegance</h4>
+                            <span class="text-brand-brown group-hover:text-gray-300 text-[8px] md:text-[9px] tracking-wider uppercase transition-colors">Kemewahan Abadi</span>
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail 2 -->
+                    <div class="slider-thumb relative aspect-[4/3] md:aspect-video rounded-sm overflow-hidden cursor-pointer group" data-index="2" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Industrial Office" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="thumb-overlay absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors"></div>
+                        <div class="absolute bottom-3 left-3 md:left-4 z-10">
+                            <h4 class="text-white font-serif text-xs md:text-sm font-semibold mb-0.5">Industrial Office</h4>
+                            <span class="text-brand-brown group-hover:text-gray-300 text-[8px] md:text-[9px] tracking-wider uppercase transition-colors">Berani & Fungsional</span>
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail 3 -->
+                    <div class="slider-thumb relative aspect-[4/3] md:aspect-video rounded-sm overflow-hidden cursor-pointer group" data-index="3" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/playground_rev02-6.webp" alt="Playground Rev" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="thumb-overlay absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors"></div>
+                        <div class="absolute bottom-3 left-3 md:left-4 z-10">
+                            <h4 class="text-white font-serif text-xs md:text-sm font-semibold mb-0.5"> Playful Modernism</h4>
+                            <span class="text-brand-brown group-hover:text-gray-300 text-[8px] md:text-[9px] tracking-wider uppercase transition-colors">Interaktif & Dinamis</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Call to Action Link -->
+                <div class="flex justify-center" data-aos="fade-up">
+                    <a href="#" class="group inline-flex items-center text-[#a73229] text-[13px] font-medium border-b border-brand-red pb-0.5 hover:text-[#8a2921] hover:border-[#8a2921] transition-colors">
+                        Start Virtual Tour 360&deg;
+                        <span class="ml-2 transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- PORTOFOLIO - KARYA TERKINI -->
+        <section class="py-15 lg:py-20 w-full bg-brand-lightbrown"> 
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <!-- Header Section -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-10 gap-4">
+                    <!-- Title Kiri -->
+                    <div data-aos="fade-up">
+                        <span class="text-[10px] font-bold tracking-[0.25em] text-brand-red uppercase mb-3 block">
+                            Portofolio
+                        </span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-tight m-0">
+                            Karya Terkini
+                        </h2>
+                    </div>
+                    <!-- Link Kanan -->
+                    <div class="pb-1 sm:pb-2" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#" class="inline-block text-[13px] text-brand-dark hover:text-brand-red transition-colors border-b border-brand-dark hover:border-brand-red pb-0.5">
+                            Lihat Semua &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Grid 3 Kolom -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                    
+                    <!-- Card 1 -->
+                    <div class="relative w-full aspect-square rounded-sm overflow-hidden group cursor-pointer shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/images/office_bintaro-12.webp" alt="Office Aluna" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute bottom-4 left-4 lg:bottom-6 lg:left-6 pr-4 z-10">
+                            <span class="text-[7px] lg:text-[8px] font-bold tracking-[0.2em] text-brand-brown uppercase block mb-1.5">
+                                Office Aluna &middot; Bintaro
+                            </span>
+                            <h3 class="text-lg lg:text-xl font-serif text-white">Ofiice</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="relative w-full aspect-square rounded-sm overflow-hidden group cursor-pointer shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/images/bedroom2-03.webp" alt="Bedroom Luxe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute bottom-4 left-4 lg:bottom-6 lg:left-6 pr-4 z-10">
+                            <span class="text-[7px] lg:text-[8px] font-bold tracking-[0.2em] text-brand-brown uppercase block mb-1.5">
+                                Pam's Cab &middot; Batu Karas
+                            </span>
+                            <h3 class="text-lg lg:text-xl font-serif text-white">Tropical Bedroom</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="relative w-full aspect-square rounded-sm overflow-hidden group cursor-pointer shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/images/Scene 22_6.webp" alt="Tropical Contemporary" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute bottom-4 left-4 lg:bottom-6 lg:left-6 pr-4 z-10">
+                            <span class="text-[7px] lg:text-[8px] font-bold tracking-[0.2em] text-brand-brown uppercase block mb-1.5">
+                                Private Residensial &middot; Bogor
+                            </span>
+                            <h3 class="text-lg lg:text-xl font-serif text-white">Tropical Contemporary</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- CONTACT US SECTION -->
+        <section class="py-20 lg:py-32 w-full bg-[#faf9f6]" id="contactUs">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <!-- Header Center -->
+                <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
+                    <span class="text-[10px] font-bold tracking-[0.25em] text-brand-red uppercase mb-4 block">
+                        Contact Us
+                    </span>
+                    <h2 class="text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-[1.2] mb-5">
+                        Mari Wujudkan <br>
+                        <span class="italic font-light">Ruang Impian Anda</span>
+                    </h2>
+                    <p class="text-gray-500 font-light text-[14px] md:text-[15px] leading-relaxed">
+                        Ceritakan visi Anda kepada kami. Tim desainer dan konsultan kami siap merespons dalam 1x24 jam.
+                    </p>
+                </div>
+
+                <!-- Main Content Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+                    
+                    <!-- Kiri: Form Kontak -->
+                    <div>
+                        <form id="contact-form" method="POST" class="space-y-6">
+                            
+                            <!-- Baris 1: Nama & Email -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2">Nama Lengkap</label>
+                                    <input type="text" name="nama" required placeholder="Budi Santoso" class="w-full bg-white border border-gray-200 rounded-sm px-4 py-3.5 text-[13px] text-brand-dark focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-[#a73229]/20 transition-all placeholder-gray-300">
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2">Alamat Email</label>
+                                    <input type="email" name="email" required placeholder="budi@email.com" class="w-full bg-white border border-gray-200 rounded-sm px-4 py-3.5 text-[13px] text-brand-dark focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-[#a73229]/20 transition-all placeholder-gray-300">
+                                </div>
+                            </div>
+
+                            <!-- Baris 2: Jenis Proyek -->
+                            <div>
+                                <label class="block text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2">Jenis Proyek</label>
+                                <select name="jenis_proyek" required class="w-full bg-white border border-gray-200 rounded-sm px-4 py-3.5 text-[13px] text-brand-dark focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-[#a73229]/20 transition-all appearance-none cursor-pointer">
+                                    <option value="" disabled selected class="text-gray-300">Pilih jenis proyek...</option>
+                                    <option value="Residensial">Residensial (Rumah/Apartemen)</option>
+                                    <option value="Komersial">Komersial (Kantor/Toko)</option>
+                                    <option value="Hospitality">Hospitality (Hotel/Cafe)</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                            </div>
+
+                            <!-- Baris 3: Pesan -->
+                            <div>
+                                <label class="block text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-2">Pesan Anda</label>
+                                <textarea name="pesan" required rows="15" placeholder="Ceritakan proyek Anda—jenis ruang, luas area, referensi gaya, dan kapan Anda ingin mulai..." class="w-full bg-white border border-gray-200 rounded-sm px-4 py-3.5 text-[13px] text-brand-dark focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-[#a73229]/20 transition-all placeholder-gray-300 resize-none"></textarea>
+                            </div>
+
+                            <!-- Tombol Kirim & Area Notifikasi (Ditambahkan) -->
+                            <div class="pt-2">
+                                <button type="submit" id="submit-btn" class="bg-brand-red hover:bg-[#8a2921] text-white text-[13px] font-medium px-8 py-3.5 rounded-sm transition-colors flex items-center justify-center min-w-[150px]">
+                                    Kirim Pesan
+                                </button>
+                                
+                                <!-- Area Teks Notifikasi (Default disembunyikan pakai 'hidden') -->
+                                <div id="form-notif" class="hidden mt-4 text-[13px] font-medium p-3 rounded-sm transition-all duration-300"></div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Kanan: Info Kontak & Map -->
+                    <div class="flex flex-col">
+                        
+                        <!-- Header Info -->
+                        <div class="border-l-2 border-brand-red pl-5 mb-10">
+                            <h3 class="text-xl md:text-2xl font-serif text-brand-dark mb-1">Kantor Utama</h3>
+                            <span class="text-[9px] font-bold tracking-[0.2em] text-gray-400 uppercase">Bandung, Jawa Barat</span>
+                        </div>
+
+                        <!-- List Detail Kontak -->
+                        <div class="space-y-6 mb-10">
+                            
+                            <!-- Alamat -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 rounded-sm bg-[#a73229]/10 flex items-center justify-center text-[#a73229] shrink-0 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                </div>
+                                <div>
+                                    <span class="text-[9px] font-bold tracking-widest text-[#a73229] uppercase block mb-1">Alamat</span>
+                                    <p class="text-[13px] text-gray-600 font-light leading-relaxed">
+                                        Jl. Irigasi no.1 Cipamokolan <br> Kec. Rancasari - Bandung
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Telepon -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 rounded-sm bg-[#a73229]/10 flex items-center justify-center text-[#a73229] shrink-0 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                </div>
+                                <div>
+                                    <span class="text-[9px] font-bold tracking-widest text-[#a73229] uppercase block mb-1">Telepon</span>
+                                    <p class="text-[13px] text-gray-600 font-light leading-relaxed">
+                                        022 87309207
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 rounded-sm bg-[#a73229]/10 flex items-center justify-center text-[#a73229] shrink-0 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                </div>
+                                <div>
+                                    <span class="text-[9px] font-bold tracking-widest text-[#a73229] uppercase block mb-1">Email</span>
+                                    <p class="text-[13px] text-gray-600 font-light leading-relaxed">
+                                        bandungindahpertiwi@yahoo.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Instagram -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-9 h-9 rounded-sm bg-[#a73229]/10 flex items-center justify-center text-brand-red shrink-0 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="text-[9px] font-bold tracking-widest text-brand-red uppercase block mb-1">Instagram</span>
+                                    <p class="text-[13px] text-gray-600 font-light leading-relaxed">
+                                        @bandungindahpertiwi
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Gambar Peta (Map Dummy) -->
+                        <div class="relative w-full h-[250px] md:h-[300px] rounded-sm overflow-hidden bg-gray-200 border border-gray-100 shadow-sm mt-auto">
+                            <!-- Dummy Image Peta/Ruangan -->
+                            <img src="https://images.unsplash.com/photo-1596280036100-348259d816a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lokasi Peta" class="w-full h-full object-cover opacity-60">
+                            
+                            <!-- Pin Lokasi Overlay -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-2">
+                                <div class="w-10 h-10 bg-brand-red text-white rounded-full flex items-center justify-center shadow-lg border-2 border-white drop-shadow-md">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                </div>
+                                <div class="bg-white px-4 py-2 rounded-sm shadow-md text-[11px] font-medium text-brand-dark">
+                                    Not Available
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- FOOTER SECTION -->
+     <?php include '../src/includes/footer.php';?>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/javascript.js"></script>
+</html>
